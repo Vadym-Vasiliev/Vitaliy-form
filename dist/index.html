@@ -5,11 +5,54 @@
       <meta charset="UTF-8"/>
       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
       <link rel="stylesheet" href="css/style.min.css"/>
+      <title>FORM JS</title>
     </head>
   </head>
-  <body> 
-    <main></main>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__title">
+              <h1>FORM <span>JS</span></h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="main">
+          <div class="container">
+            <div class="main__body">
+              <form class="main-form">
+                <label class="main-form__label">
+                  <input class="main-form__input main-form__input--name" type="text" name="name" placeholder="Name"/>
+                </label>
+                <label class="main-form__label">
+                  <input class="main-form__input main-form__input--phone" id="phone" type="tel" name="phone" placeholder="Phone"/>
+                </label>
+                <label class="main-form__label">
+                  <input class="main-form__input main-form__input--file" type="file" name="photo" placeholder="Photo"/>
+                </label>
+                <button class="main-form__btn" type="submit">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <div class="footer__title">
+              <h2>FORM <span>JS</span></h2>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>

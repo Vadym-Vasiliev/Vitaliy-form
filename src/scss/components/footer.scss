@@ -1,0 +1,23 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: $white-02;
+
+  &__body {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title > h2 {
+    letter-spacing: 8;
+
+    color: $bg-main;
+  }
+
+  &__title span {
+    letter-spacing: 2;
+
+    color: $white-02;
+  }
+}

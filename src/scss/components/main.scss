@@ -1,0 +1,70 @@
+.main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.main-form {
+  width: 500px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
+    0px 0px 1px rgb(0 0 0 / 12%);
+
+  background-color: $black-02;
+
+  &__label {
+    border: 1px solid $black-02;
+    transition: 250ms linear;
+
+    background-color: $white-02;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
+        0px 0px 1px rgb(0 0 0 / 12%);
+    }
+  }
+
+  &__input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    color: $white;
+
+    background-color: transparent;
+
+    &--file {
+      cursor: pointer;
+    }
+
+    &.error {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    }
+  }
+
+  &__btn {
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+    transition: 250ms linear;
+
+    color: $black-02;
+    background-color: $white-02;
+
+    &:hover,
+    &:focus {
+      color: $white-02;
+      box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
+        0px 0px 1px rgb(0 0 0 / 12%);
+    }
+  }
+}
