@@ -1,17 +1,43 @@
 section.main
   .container
     .main__body
-      form.main-form
+      form.main-form(action="" method="" id="form")
         label.main-form__label
-          input.main-form__input.main-form__input--name(type="text" name="name"  placeholder="Name")
+          input.main-form__input.main-form__input--name(id="name" type="text" name="name"  placeholder="Name")
         label.main-form__label
           input.main-form__input.main-form__input--phone(id="phone" type="tel" name="phone" placeholder="Phone")
         label.main-form__label
-          input.main-form__input.main-form__input--file(type="file" name="photo" placeholder="Photo")
-        button.main-form__btn(type="submit") SUBMIT
+          input.main-form__input.main-form__input--file(id="file" type="file" name="photo" placeholder="Photo")
+        button.main-form__btn(type="submit") ADD
+      .calc
+        .calc__screen
+          p 0
+        .calc__btns
+          .calc__btn.calc__btn--ac.calc__btn--bg-gray-opacity ac 
+          .calc__btn.calc__btn--plus-minus.calc__btn--bg-gray-opacity +/-
+          .calc__btn.calc__btn--percent.calc__btn--bg-gray-opacity %
+          .calc__btn.calc__btn--division.calc__btn--bg-orange /
+          .calc__btn.calc__btn--seven.calc__btn--bg-gray 7 
+          .calc__btn.calc__btn--eight.calc__btn--bg-gray 8
+          .calc__btn.calc__btn--nine.calc__btn--bg-gray 9
+          .calc__btn.calc__btn--multiply.calc__btn--bg-orange X
+          .calc__btn.calc__btn--four.calc__btn--bg-gray 4 
+          .calc__btn.calc__btn--five.calc__btn--bg-gray 5
+          .calc__btn.calc__btn--six.calc__btn--bg-gray 6
+          .calc__btn.calc__btn--minus.calc__btn--bg-orange -
+          .calc__btn.calc__btn--one.calc__btn--bg-gray 1 
+          .calc__btn.calc__btn--two.calc__btn--bg-gray 2
+          .calc__btn.calc__btn--three.calc__btn--bg-gray 3
+          .calc__btn.calc__btn--plus.calc__btn--bg-orange +
+          .calc__btn.calc__btn--zero.calc__btn--bg-gray 0
+          .calc__btn.calc__btn--dot.calc__btn--bg-gray .
+          .calc__btn.calc__btn--total.calc__btn--bg-orange =
+          
+
+
         
  
-          
+
 
 
         

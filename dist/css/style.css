@@ -336,6 +336,7 @@ main {
 .main-form {
   width: 500px;
   min-height: 400px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
@@ -362,9 +363,6 @@ main {
 .main-form__input--file {
   cursor: pointer;
 }
-.main-form__input.error {
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
-}
 .main-form__btn {
   font-size: 20px;
   height: 40px;
@@ -379,6 +377,55 @@ main {
 .main-form__btn:hover, .main-form__btn:focus {
   color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
+.calc {
+  width: 400px;
+  height: 575px;
+  padding: 40px 20px 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.calc__screen > p {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.calc__btns {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 20px;
+}
+.calc__btn {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms linear;
+  user-select: none;
+}
+.calc__btn:hover, .calc__btn:focus, .calc__btn:active {
+  opacity: 0.7;
+  transform: scale(1.02);
+}
+.calc__btn--zero {
+  width: 165px;
+  border-radius: 50px;
+}
+.calc__btn--bg-orange {
+  background-color: orange;
+}
+.calc__btn--bg-gray {
+  background-color: gray;
+}
+.calc__btn--bg-gray-opacity {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .footer {

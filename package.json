@@ -23,7 +23,9 @@
   "homepage": "https://github.com/Vadym-Vasiliev/first-gulp#readme",
   "dependencies": {
     "gulp-cli": "^2.3.0",
-    "imask": "^6.4.3"
+    "imask": "^6.4.3",
+    "inputmask": "^5.0.7",
+    "just-validate": "^3.8.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
