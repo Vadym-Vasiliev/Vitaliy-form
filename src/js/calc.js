@@ -1,3 +1,5 @@
+// ==============================
+
 let a = ""; // перше число
 let b = ""; // друге число
 let sign = ""; //знак операції
@@ -38,7 +40,7 @@ document.querySelector(".calc__btns").onclick = (event) => {
       a += key;
       out.textContent = a;
     } else if (a !== "" && b !== "" && finish) {
-      b = "";
+      b = key;
       finish = false;
       out.textContent = b;
     } else {
@@ -51,7 +53,7 @@ document.querySelector(".calc__btns").onclick = (event) => {
   //якщо нажата кнопка + - / *
 
   if (action.includes(key)) {
-    sign += key;
+    sign = key;
     out.textContent = sign;
     return;
   }
