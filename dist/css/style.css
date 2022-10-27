@@ -428,6 +428,45 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.main-content {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main-content__body {
+  position: relative;
+  padding: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.main-content__text {
+  font-size: 20px;
+  color: white;
+}
+.main-content__text:not(:last-child) {
+  margin-bottom: 10px;
+}
+.main-content__img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+.main-content__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10px;
+  height: 15px;
+  cursor: pointer;
+  transition: 250ms linear;
+  border: none;
+  color: white;
+  background-color: transparent;
+}
+
 .footer {
   padding-top: 20px;
   padding-bottom: 20px;

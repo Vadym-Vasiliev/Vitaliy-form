@@ -130,3 +130,49 @@
     }
   }
 }
+
+.main-content {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__body {
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
+      0px 0px 1px rgb(0 0 0 / 12%);
+
+    background-color: rgb(255, 255, 255, 0.2);
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $white;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 200px;
+    height: auto;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 15px;
+    cursor: pointer;
+    transition: 250ms linear;
+    border: none;
+
+    color: $white;
+    background-color: transparent;
+  }
+}
