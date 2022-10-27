@@ -35,6 +35,8 @@ document.querySelector(".calc__btns").onclick = (event) => {
 
   //якщо нажата кнопка 0-9
 
+  console.log(digit, key);
+
   if (digit.includes(key)) {
     if (b === "" && sign === "") {
       a += key;
