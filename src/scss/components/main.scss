@@ -89,10 +89,14 @@
 
   &__btns {
     font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 25px;
-    row-gap: 20px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // column-gap: 25px;
+    // row-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px;
+    grid-gap: 20px;
   }
 
   &__btn {
@@ -114,9 +118,10 @@
     }
 
     &--zero {
-      width: 165px;
-
+      width: 166px;
       border-radius: 50px;
+      display: grid;
+      grid-column: 3 / 1;
     }
 
     &--bg-orange {

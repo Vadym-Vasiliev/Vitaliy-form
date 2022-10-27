@@ -394,10 +394,10 @@ main {
 }
 .calc__btns {
   font-size: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 25px;
-  row-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px;
+  grid-gap: 20px;
 }
 .calc__btn {
   cursor: pointer;
@@ -415,8 +415,10 @@ main {
   transform: scale(1.02);
 }
 .calc__btn--zero {
-  width: 165px;
+  width: 166px;
   border-radius: 50px;
+  display: grid;
+  grid-column: 3/1;
 }
 .calc__btn--bg-orange {
   background-color: orange;
