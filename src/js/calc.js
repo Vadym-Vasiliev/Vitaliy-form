@@ -1,3 +1,69 @@
+const users = [
+  {
+    name: "Ivan",
+    surname: "Lopata",
+    age: 25,
+    sex: "man",
+  },
+  {
+    name: "Petro",
+    surname: "Kiosk",
+    age: 14,
+    sex: "man",
+  },
+  {
+    name: "Roman",
+    surname: "Bronza",
+    age: 55,
+    sex: "man",
+  },
+  {
+    name: "Olga",
+    surname: "Rozetka",
+    age: 31,
+    sex: "woman",
+  },
+  {
+    name: "Anton",
+    surname: "Zahidnui",
+    age: 18,
+    sex: "man",
+  },
+  {
+    name: "Marina",
+    surname: "Stomatolog",
+    age: 17,
+    sex: "woman",
+  },
+
+  {
+    name: "Viktor",
+    surname: "Purig",
+    age: 67,
+    sex: "man",
+  },
+  {
+    name: "Slavik",
+    surname: "Malui",
+    age: 12,
+    sex: "man",
+  },
+  {
+    name: "Nazar",
+    surname: "Peruka",
+    age: 22,
+    sex: "man",
+  },
+  {
+    name: "Svitlana",
+    surname: "Oper",
+    age: 38,
+    sex: "woman",
+  },
+];
+
+console.log(users);
+
 // ==============================
 
 let a = ""; // перше число
