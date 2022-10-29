@@ -62,7 +62,101 @@ const users = [
   },
 ];
 
-console.log(users);
+function findNumbes(number, secondFunc) {}
+
+// function findYoungUser(sortUsers) {
+//   const sortArray = sortUsers.filter((el) => {
+//     if (el.age < 16) {
+//       return el;
+//     }
+//   });
+
+//   return sortArray;
+// }
+
+// const result = findYoungUser(users);
+// console.log(result);
+
+// function findYoungNumber(sortUsers) {
+//   const sortedArr = sortUsers.sort((a, b) => {
+//     if (a.age > b.age) {
+//       return 1;
+//     } else if (a.age < b.age) {
+//       return -1;
+//     } else {
+//       return 0;
+//     }
+//   });
+//   return sortedArr[0];
+// }
+
+// const result = findYoungNumber(users);
+// console.log(result);
+
+// const maxNumberAgeUsers = users.reduce(
+//   // (total, user) => (user.age > total.age ? user : total),
+//   function (total, user) {
+//     if (user.age > total.age) {
+//       return user;
+//     } else {
+//       return total;
+//     }
+//   },
+//   { age: 0 }
+// );
+// console.log(maxNumberAgeUsers);
+
+// =======================
+//FILTER
+
+// users.filter((el) => {
+//   console.log(el);
+// });
+
+//   console.log(result);
+// });
+
+//FOR
+
+// for (let i = 0; i < users.length; i++) {
+//   console.log(users[i]);
+// }
+
+// FOR
+
+// for (let user of users) {
+//   console.log(user);
+// }
+
+// ForEach
+
+// users.forEach((user) => {
+//   console.log(user);
+// });
+
+// MAP
+
+// const newArrayUsers = users.map((user) => {
+//   return user.age;
+// });
+// console.log(newArrayUsers);
+
+// REDUCE
+
+// const result = users.reduce((total, user) => {
+//   return total + user.age;
+// }, 0);
+// console.log(result);
+
+// FIND
+
+// const result = users.find((user) => user.name === "Olga");
+// console.log(result);
+
+// FINDINDEX
+
+// const result = users.findIndex((user) => user.name === "Olga");
+// console.log(result);
 
 // ==============================
 
