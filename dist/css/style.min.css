@@ -380,6 +380,7 @@ main {
 }
 
 .calc {
+  margin-bottom: 200px;
   width: 400px;
   height: 575px;
   padding: 40px 20px 10px 20px;
@@ -467,6 +468,41 @@ main {
   border: none;
   color: white;
   background-color: transparent;
+}
+
+.weather {
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.weather__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.weather__main {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.2);
+}
+.weather__city {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.weather__icon {
+  width: 100px;
+}
+.weather__temp {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.weather__feels-like {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .footer {
