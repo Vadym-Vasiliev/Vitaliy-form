@@ -53,40 +53,40 @@
 
 // STAR WARS
 
-const content = document.querySelector(".content__list");
-const buttonNext = document.querySelector(".content__btn");
-let currentPage = 1;
+// const content = document.querySelector(".content__list");
+// const buttonNext = document.querySelector(".content__btn");
+// let currentPage = 1;
 
-async function loadContent(page) {
-  const server = `https://swapi.dev/api/people?page=${page}`;
-  const response = await fetch(server);
-  const responseResult = await response.json();
+// async function loadContent(page) {
+//   const server = `https://swapi.dev/api/people?page=${page}`;
+//   const response = await fetch(server);
+//   const responseResult = await response.json();
 
-  if (response.ok) {
-    getContent(responseResult);
-    currentPage++;
-  } else {
-    content.innerHTML = responseResult.message;
-  }
-}
+//   if (response.ok) {
+//     getContent(responseResult);
+//     currentPage++;
+//   } else {
+//     content.innerHTML = responseResult.message;
+//   }
+// }
 
-function getContent(data) {
-  data.results.forEach((person) => {
-    const template = `<div class="content__item" style="background:${person.hair_color}">
-  <div class="content__content">${person.name}</div>
-   <div class="content__content">${person.height}</div>
-    <div class="content__content">${person.mass}</div>
-     <div class="content__content">${person.hair_color}</div>
-      <div class="content__content">${person.skin_color}</div>
-  </div>
- `;
+// function getContent(data) {
+//   data.results.forEach((person) => {
+//     const template = `<div class="content__item" style="background:${person.hair_color}">
+//   <div class="content__content">${person.name}</div>
+//    <div class="content__content">${person.height}</div>
+//     <div class="content__content">${person.mass}</div>
+//      <div class="content__content">${person.hair_color}</div>
+//       <div class="content__content">${person.skin_color}</div>
+//   </div>
+//  `;
 
-    content.innerHTML += template;
-  });
-}
+//     content.innerHTML += template;
+//   });
+// }
 
-buttonNext.addEventListener("click", () => {
-  loadContent(currentPage);
-});
+// buttonNext.addEventListener("click", () => {
+//   loadContent(currentPage);
+// });
 
-loadContent(currentPage);
+// loadContent(currentPage);

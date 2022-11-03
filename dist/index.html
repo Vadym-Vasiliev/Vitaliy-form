@@ -72,11 +72,27 @@
               </div>
               <div class="weather"></div>
               <div class="tabs">
-                <div class="tabs__buttons">
-                  <button class="tabs__button" type="radio">PEOPLE</button>
-                  <button class="tabs__button" type="radio">STARSHIPS</button>
-                  <button class="tabs__button" type="radio">VEHICLES</button>
-                  <button class="tabs__button" type="radio">PLANETS</button>
+                <div class="tabs__list">
+                  <div class="tabs__item">
+                    <label class="tabs__label" for="radio1"> 
+                      <input class="tabs__input" type="radio" name="radio-btn" id="radio1" data-endpoint="people" checked="checked"/><span class="tabs__span">PEOPLE</span>
+                    </label>
+                  </div>
+                  <div class="tabs__item">
+                    <label class="tabs__label" for="radio2"> 
+                      <input class="tabs__input" type="radio" name="radio-btn" id="radio2" data-endpoint="starships"/><span class="tabs__span">STARSHIPS</span>
+                    </label>
+                  </div>
+                  <div class="tabs__item">
+                    <label class="tabs__label" for="radio3"> 
+                      <input class="tabs__input" type="radio" name="radio-btn" id="radio3" data-endpoint="vehicles"/><span class="tabs__span">VEHICLES</span>
+                    </label>
+                  </div>
+                  <div class="tabs__item">
+                    <label class="tabs__label" for="radio4"> 
+                      <input class="tabs__input" type="radio" name="radio-btn" id="radio4" data-endpoint="planets"/><span class="tabs__span">PLANETS</span>
+                    </label>
+                  </div>
                 </div>
                 <div class="tabs__content"></div>
                 <button class="tabs__more" type="button">MORE</button>
