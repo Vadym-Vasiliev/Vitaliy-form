@@ -600,8 +600,7 @@ main {
 .tabs__list-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 20px;
   transition: 250ms linear;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
@@ -625,7 +624,7 @@ main {
 .tabs__item-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-width: 200px;
   padding: 10px;
   font-size: 20px;

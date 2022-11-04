@@ -341,8 +341,7 @@
   &__list-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 20px;
     transition: 250ms linear;
     box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
@@ -375,7 +374,7 @@
   &__item-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-width: 200px;
     padding: 10px;
     font-size: 20px;

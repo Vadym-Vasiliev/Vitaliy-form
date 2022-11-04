@@ -26,18 +26,21 @@ async function loadTabContent(param, page) {
   const responseResult = await response.json();
 
   if (response.ok) {
-    switch (getPeopleContent(responseResult)) {
-      case 1:
+    switch (param) {
+      case "people":
         getPeopleContent(responseResult);
         break;
-      case 2:
+      case "starships":
         getStarshipsContent(responseResult);
         break;
-      case 3:
+      case "vehicles":
         getVehiclesContent(responseResult);
         break;
-      case 4:
+      case "planets":
         getPlanetsContent(responseResult);
+        break;
+      default:
+        tabsContent.innerHTML = responseResult.message;
         break;
     }
     currentPage++;
